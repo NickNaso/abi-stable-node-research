@@ -1,3 +1,3 @@
-double sum(double a, double b) {
+inline double sum(double a, double b) {
     return a + b;
 }
