@@ -2,6 +2,7 @@
 #include "libmath.h"
 
 int main() {
-    printf("%.2f", Add(2, 5));
+    double d = Add(5, 2);
+    printf("%.2f\n", d);
     return 0;
 }
