@@ -2,5 +2,6 @@
 #include "libmath.h"
 
 int main() {
-    printf("%f", Add(10, 23));
+    printf("%.2f", Add(2, 5));
+    return 0;
 }
