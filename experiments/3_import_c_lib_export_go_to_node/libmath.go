@@ -3,7 +3,7 @@ package main
 /*
 #cgo LDFLAGS: -L. -lsum
 #cgo CFLAGS: -I.
-#include <sum.h>
+extern double sum(double a, double b);
 */
 import "C"
 

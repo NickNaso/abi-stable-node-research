@@ -21,7 +21,7 @@ typedef struct { const char *p; ptrdiff_t n; } _GoString_;
 
 
 
-#include <sum.h>
+extern double sum(double a, double b);
 
 #line 1 "cgo-generated-wrapper"
 

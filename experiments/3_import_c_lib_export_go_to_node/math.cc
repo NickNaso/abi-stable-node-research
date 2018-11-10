@@ -1,5 +1,15 @@
 #include <node_api.h>
 #include <assert.h>
+#include "libmath.h"
+
+/*#ifdef __cplusplus 
+extern "C" {
+#endif
+#include "libmath.h"
+#ifdef __cplusplus 
+}
+#endif*/
+
 #include <stdio.h>
 napi_value Method(napi_env env, napi_callback_info info) {
   napi_status status;
@@ -35,12 +45,12 @@ napi_value Method(napi_env env, napi_callback_info info) {
   status = napi_get_value_double(env, args[1], &value1);
   assert(status == napi_ok);
 
-  napi_value sum;
+  napi_value res;
   // Call Go code and pass the result to N-API function and get back to JavaScript
-  status = napi_create_double(env, Add(value0, value1), &sum);
+  status = napi_create_double(env, Add(value0, value1), &res);
   assert(status == napi_ok);
 
-  return sum;
+  return res;
 }
 
 #define DECLARE_NAPI_METHOD(name, func)                          \
