@@ -1,9 +1,9 @@
 package main
 
 /*
-#cgo CFLAGS: -I.
 #cgo LDFLAGS: -L. -lsum
-#include "sum.h"
+#cgo CFLAGS: -I.
+#include <sum.h>
 */
 import "C"
 

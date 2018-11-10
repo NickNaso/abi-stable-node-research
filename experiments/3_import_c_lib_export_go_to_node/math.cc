@@ -1,6 +1,5 @@
 #include <node_api.h>
 #include <assert.h>
-#include "libmath.h"
 #include <stdio.h>
 napi_value Method(napi_env env, napi_callback_info info) {
   napi_status status;
