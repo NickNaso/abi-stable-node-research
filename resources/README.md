@@ -11,6 +11,18 @@ this project
 
 **[Cgo: link on building static library](https://www.reddit.com/r/golang/comments/63ho4s/cgo_why_do_i_need_to_link_when_building_a_static/)**
 
+**[Rules for passing pointers between Go and C](https://go.googlesource.com/proposal/+/master/design/12416-cgo-pointers.md)**
+
+**[Pass callback from C](https://golang.org/misc/cgo/test/callback.go)**
+
+**[How to pass GoLang's struct's method as C callback](https://stackoverflow.com/questions/48587118/how-to-pass-golangs-structs-method-as-c-callback)**
+
+**[Function pointers and callback in C](https://opensourceforu.com/2012/02/function-pointers-and-callbacks-in-c-an-odyssey/)**
+
+**[Pointers to memeber function](https://isocpp.org/wiki/faq/pointers-to-members)**
+
+**[Call Go function from C function](https://dev.to/mattn/call-go-function-from-c-function-1n3)**
+
 ...
 
 ### Nicola Del Gobbo
