@@ -20,7 +20,7 @@ typedef struct { const char *p; ptrdiff_t n; } _GoString_;
 #line 2 "libmath.go"
 
 
- #include "sum.h"
+ #include "bridge.h"
 
 #line 1 "cgo-generated-wrapper"
 
@@ -71,7 +71,7 @@ extern "C" {
 #endif
 
 
-extern double Add(double p0, double p1);
+extern void Add(napi_env p0, uint32_t p1);
 
 #ifdef __cplusplus
 }
