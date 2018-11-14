@@ -1,6 +1,6 @@
 package main
 // #cgo CFLAGS: -I.
-// #cgo LDFLAGS: -L. -lsum
+// #cgo LDFLAGS: -L. -lsumstub
 // #include "sum.h"
 import "C"
 
