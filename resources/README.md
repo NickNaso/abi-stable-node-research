@@ -23,7 +23,9 @@ this project
 
 **[Call Go function from C function](https://dev.to/mattn/call-go-function-from-c-function-1n3)**
 
-...
+**[Building And Using Static And Shared C Libraries](http://docencia.ac.upc.edu/FIB/USO/Bibliografia/unix-c-libraries.html)**
+
+**[FFI notes](./ffi_notes.md)**
 
 ### Nicola Del Gobbo
 
@@ -39,4 +41,4 @@ Thank you to all people that encourage me every day.
 
 ## License
 
-Licensed under [Apache license V2](./LICENSE)
+Licensed under [Apache license V2](../LICENSE)
