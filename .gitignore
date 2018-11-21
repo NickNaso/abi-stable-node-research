@@ -56,3 +56,7 @@ typings/
 
 # JetBrains IDE meta data
 .idea
+
+# Remove object file and static library
+*.o
+*.a
