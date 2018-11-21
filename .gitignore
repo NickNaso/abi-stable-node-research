@@ -60,3 +60,4 @@ typings/
 # Remove object file and static library
 *.o
 *.a
+main
