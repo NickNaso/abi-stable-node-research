@@ -6,9 +6,9 @@ extern "C" {
     #include <stddef.h>
     #include <stdint.h>
 
-    // #if !defined __cplusplus || (defined(_MSC_VER) && _MSC_VER < 1900)
-    // typedef uint16_t char16_t;
-    // #endif
+    #if !defined __cplusplus || (defined(_MSC_VER) && _MSC_VER < 1900)
+    typedef uint16_t char16_t;
+    #endif
 
     // JSVM API types are all opaque pointers for ABI stability
     // typedef undefined structs instead of void* for compile time type safety
