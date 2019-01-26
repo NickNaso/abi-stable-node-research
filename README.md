@@ -1,4 +1,5 @@
-# Research for NAPI — Node with PoC ABI stable API for native modules.
+# Research for NAPI
+## Node with PoC ABI stable API for native modules.
 ---
 
 ## This module is under development yet :-) 
