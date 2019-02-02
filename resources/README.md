@@ -1,8 +1,10 @@
 #  Resources that inspired this work
 
-**[FFI notes](./ffi_notes.md)**
+Personal notes about **FFI** and **N-API**
 
-**[N-API notes](./napi_notes.md)**
+- **[FFI notes](./ffi_notes.md)**
+
+- **[N-API notes](./napi_notes.md)**
 
 
 This section contains a list of resources that inspired me while I was working in
