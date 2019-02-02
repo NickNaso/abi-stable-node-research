@@ -1,5 +1,9 @@
 #  Resources that inspired this work
 
+**[FFI notes](./ffi_notes.md)**
+**[N-API notes](./napi_notes.md)**
+
+
 This section contains a list of resources that inspired me while I was working in
 this project
 
@@ -25,7 +29,6 @@ this project
 
 **[Building And Using Static And Shared C Libraries](http://docencia.ac.upc.edu/FIB/USO/Bibliografia/unix-c-libraries.html)**
 
-**[FFI notes](./ffi_notes.md)**
 
 ### Nicola Del Gobbo
 
