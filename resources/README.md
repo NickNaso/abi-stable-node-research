@@ -1,6 +1,7 @@
 #  Resources that inspired this work
 
 **[FFI notes](./ffi_notes.md)**
+
 **[N-API notes](./napi_notes.md)**
 
 
