@@ -23,12 +23,12 @@ C-based functions exported by Node.js. `node-addon-api` is a more efficient way 
 Following the example of `node-addon-api` this project has the purpose to invastigate the possibility to write a wrapper over
 N-API written in programming languages different from C / C++.
  
-* **[ABI stability](/abi_stability.md)**
-* **[Data types](/data_types.md)**
-* **[Error handling](/error_handling.md)**
-* **[Module registration](/module_registration.md)**
-* **[Working with JavaScript](/working_with_javascript.md)**
-* **[Object lifetime](/object_lifetime.md)**
-* **[Object wrap](/object_wrap.md)**
-* **[Asynchronous operations](/asynchronous_operations.md)**
+* **[ABI stability](/resources/abi_stability.md)**
+* **[Data types](/resources//data_types.md)**
+* **[Error handling](/resources/error_handling.md)**
+* **[Module registration](/resources/module_registration.md)**
+* **[Working with JavaScript](/resources/working_with_javascript.md)**
+* **[Object lifetime](/resources/object_lifetime.md)**
+* **[Object wrap](/resources/object_wrap.md)**
+* **[Asynchronous operations](/resources/asynchronous_operations.md)**
 
