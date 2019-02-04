@@ -2,54 +2,16 @@
 > Node with PoC ABI stable API for native modules.
 
 
-## This module is under development yet :-) 
-### It will be a long process end this project and every help will be welcome
-### Give me other time i work with :heart: for all of you
 
-* [Introduction](#introduction)
-* [Supported platforms](#supported_platforms)
-* [Prerequisites](#prerequisites)
-* [Installation](#install)
-* [Usage](#usage)
-* [API](#api)
+
+* [Experiments](/experiments)
+* [Papers](/papers)
+* [Resources](/resources)
+* [Prototype](/prototype)
 * [Code of conduct](CODE_OF_CONDUCT.md)
 * [Team](#team)
 * [Acknowledgements](#acknowledgements)
 * [License](#license)
-
-<a name="introduction"></a>
-
-## Introduction
-
-...
-
-<a name="supported_platforms">
-
-## Supported platforms
-
-...
-
-<a name="prerequisites"></a>
-
-## Prerequisites
-
-...
-
-<a name="install"></a>
-
-## Installation
-
-...
-
-<a name="usage"></a>
-
-## Usage
-
-...
-
-<a name="api"></a>
-
-## API
 
 <a name="team"></a>
 
