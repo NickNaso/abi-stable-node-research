@@ -1,6 +1,6 @@
-# Export Go function to Node
+# Import C code and export Go function to Node
 
-In this experiment I created a **Go** function that I subsequently export like C static library. After this first process I import the library in a native add-on. To run the experiment execute the following command:
+In this experiment I import C code in a **Go** function that I subsequently export like C static library. After this first process I import the library in a native add-on. To run the experiment execute the following command:
 
 `$ ./build.sh`
 
