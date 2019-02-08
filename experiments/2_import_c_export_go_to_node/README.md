@@ -1,4 +1,4 @@
-# Import C code and export Go function to Node
+# Import C code and export Go function to Node.js
 
 In this experiment I import C code in a **Go** function that I subsequently export like C static library. After this first process I use the library in a native add-on. To run the experiment execute the following command:
 
