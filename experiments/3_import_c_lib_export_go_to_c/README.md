@@ -1,6 +1,6 @@
 # Import C library in Go and export to Node.js
 
-In this experiment I imported C library in **Go** then I used the function of the library in a **Go** function. After the export like a C static library this first process I used it in a native add-on. To run the experiment execute the following command:
+In this experiment I imported C library in **Go** then I used the function of the library in a **Go** function. After the export like a C static library I used it in a native add-on. To run the experiment execute the following command:
 
 `$ ./build.sh`
 
