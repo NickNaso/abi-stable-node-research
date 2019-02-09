@@ -1,6 +1,6 @@
 # Import C code and export Go function to Node.js
 
-In this experiment I import C code in a **Go** function that I subsequently export like C static library. After this first process I use the library in a native add-on. To run the experiment execute the following command:
+In this experiment I imported C code in a **Go** function that I subsequently exported like C static library. After this first process I used the library in a native add-on. To run the experiment execute the following command:
 
 `$ ./build.sh`
 
@@ -8,7 +8,7 @@ If you are on Unix system and you will have problem with permission try this:
 
 `$ sudo chmod 755 build.sh`
 
-If you are on **Windows** system try to replicate the command that are on the build script reported below:
+If you are on **Windows** system try to replicate the commands that are on the build script reported below:
 
 ```
 #!/bin/bash          
