@@ -1,75 +1,30 @@
-# gaa
----
+# Use C library stub in Go and real library in Node.js
 
-## This module is under development yet :-) 
-### It will be a long process end this project and every help will be welcome
-### Give me other time i work with :heart: for all of you
+In this experiment I imported C library stub in **Go** then I used the function of the library in a **Go** function. After the export like a C static library I used it in a native add-on linking the real C library. To run the experiment execute the following command:
 
-* [Introduction](#introduction)
-* [Supported platforms](#supported_platforms)
-* [Prerequisites](#prerequisites)
-* [Installation](#install)
-* [Usage](#usage)
-* [API](#api)
-* [Code of conduct](CODE_OF_CONDUCT.md)
-* [Team](#team)
-* [Acknowledgements](#acknowledgements)
-* [License](#license)
+`$ ./build.sh`
 
-<a name="introduction"></a>
+If you are on Unix system and you will have problem with permission try this:
 
-## Introduction
+`$ sudo chmod 755 build.sh`
 
-...
+If you are on **Windows** system try to replicate the commands that are on the build script reported below:
 
-<a name="supported_platforms">
-
-## Supported platforms
-
-...
-
-<a name="prerequisites"></a>
-
-## Prerequisites
-
-...
-
-<a name="install"></a>
-
-## Installation
-
-...
-
-<a name="usage"></a>
-
-## Usage
-
-...
-
-<a name="api"></a>
-
-## API
-
-<a name="team"></a>
-
-## The Team
-
-### Nicola Del Gobbo
-
-<https://github.com/NickNaso/>
-
-<https://www.npmjs.com/~nicknaso>
-
-<https://twitter.com/NickNaso>
-
-<a name="acknowledgements"></a>
-
-## Acknowledgements
-
-Thank you to all people that encourage me every day.
-
-<a name="license"></a>
-
-## License
-
-Licensed under [Apache license V2](./LICENSE)
+```
+#!/bin/bash          
+echo Starting build process ...  && \
+echo Build C library ...  && \
+gcc -c sum.c && \
+ar -rcs libsum.a sum.o && \
+ranlib libsum.a && \
+gcc -c sum-stub.c && \
+ar -rcs libsumstub.a sum-stub.o && \
+ranlib libsumstub.a && \
+echo Build Go library ...  && \
+go build -a -x -o libmath.a -buildmode=c-archive libmath.go && \
+npm i && \
+echo Node.js native add-on successfully created. && \
+echo Starting test ... && \
+node add.js && \
+echo Test successfully ended.
+```
