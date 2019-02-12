@@ -860,3 +860,228 @@ napi_add_finalizer(
 // ##############################################################################
 // Stub for runtime API
 // ##############################################################################
+
+NAPI_EXTERN NAPI_NO_RETURN 
+void napi_fatal_error(
+    const char* location,
+    size_t location_len,
+    const char* message,
+    size_t message_len);
+
+// Methods for custom handling of async operations
+NAPI_EXTERN napi_status 
+napi_async_init(
+    napi_env env,
+    napi_value async_resource,
+    napi_value async_resource_name,
+    napi_async_context* result) {
+        return napi_ok;
+}
+
+NAPI_EXTERN napi_status 
+napi_async_destroy(
+    napi_env env,
+    napi_async_context async_context) {
+        return napi_ok;
+}
+
+NAPI_EXTERN napi_status 
+napi_make_callback(
+    napi_env env,
+    napi_async_context async_context,
+    napi_value recv,
+    napi_value func,
+    size_t argc,
+    const napi_value* argv,
+    napi_value* result) {
+        return napi_ok;
+}
+
+// Methods to provide node::Buffer functionality with napi types
+NAPI_EXTERN napi_status 
+napi_create_buffer(
+    napi_env env,
+    size_t length,
+    void** data,
+    napi_value* result) {
+        return napi_ok;
+}
+NAPI_EXTERN napi_status 
+napi_create_external_buffer(
+    napi_env env,
+    size_t length,
+    void* data,
+    napi_finalize finalize_cb,
+    void* finalize_hint,
+    napi_value* result) {
+        return napi_ok;
+}
+NAPI_EXTERN napi_status 
+napi_create_buffer_copy(
+    napi_env env,
+    size_t length,
+    const void* data,
+    void** result_data,
+    napi_value* result) {
+        return napi_ok;
+}
+NAPI_EXTERN napi_status 
+napi_is_buffer(
+    napi_env env,
+    napi_value value,
+    bool* result) {
+        return napi_ok;
+}
+NAPI_EXTERN napi_status 
+napi_get_buffer_info(
+    napi_env env,
+    napi_value value,
+    void** data,
+    size_t* length) {
+        return napi_ok;
+}
+
+// Methods to manage simple async operations
+NAPI_EXTERN napi_status 
+napi_create_async_work(
+    napi_env env,
+    napi_value async_resource,
+    napi_value async_resource_name,
+    napi_async_execute_callback execute,
+    napi_async_complete_callback complete,
+    void* data,
+    napi_async_work* result) {
+        return napi_ok;
+}
+NAPI_EXTERN napi_status 
+napi_delete_async_work(
+    napi_env env,
+    napi_async_work work) {
+        return napi_ok;
+}
+NAPI_EXTERN napi_status 
+napi_queue_async_work(
+    napi_env env,
+    napi_async_work work) {
+        return napi_ok;
+}
+NAPI_EXTERN napi_status 
+napi_cancel_async_work(
+    napi_env env,
+    napi_async_work work) {
+        return napi_ok;
+}
+
+#if NAPI_VERSION >= 2
+
+// Return the current libuv event loop for a given environment
+NAPI_EXTERN napi_status 
+napi_get_uv_event_loop(
+    napi_env env,
+    struct uv_loop_s** loop) {
+        return napi_ok;
+}
+
+#endif  // NAPI_VERSION >= 2
+
+#if NAPI_VERSION >= 3
+
+NAPI_EXTERN napi_status 
+napi_fatal_exception(napi_env env, napi_value err);
+
+NAPI_EXTERN napi_status 
+napi_add_env_cleanup_hook(
+    napi_env env,
+    void (*fun)(void* arg),
+    void* arg) {
+        return napi_ok;
+}
+
+NAPI_EXTERN napi_status 
+napi_remove_env_cleanup_hook(
+    napi_env env,
+    void (*fun)(void* arg),
+    void* arg) {
+        return napi_ok;
+}
+
+NAPI_EXTERN napi_status 
+napi_open_callback_scope(
+    napi_env env,
+    napi_value resource_object,
+    napi_async_context context,
+    napi_callback_scope* result) {
+        return napi_ok;
+}
+
+NAPI_EXTERN napi_status 
+napi_close_callback_scope(
+    napi_env env,
+    napi_callback_scope scope) {
+        return napi_ok;
+}
+
+#endif  // NAPI_VERSION >= 3
+
+#if NAPI_VERSION >= 4
+
+// Calling into JS from other threads
+NAPI_EXTERN napi_status
+napi_create_threadsafe_function(
+    napi_env env,
+    napi_value func,
+    napi_value async_resource,
+    napi_value async_resource_name,
+    size_t max_queue_size,
+    size_t initial_thread_count,
+    void* thread_finalize_data,
+    napi_finalize thread_finalize_cb,
+    void* context,
+    napi_threadsafe_function_call_js call_js_cb,
+    napi_threadsafe_function* result) {
+        return napi_ok;
+}
+
+NAPI_EXTERN napi_status
+napi_get_threadsafe_function_context(
+    napi_threadsafe_function func,
+    void** result) {
+        return napi_ok;
+}
+
+NAPI_EXTERN napi_status
+napi_call_threadsafe_function(
+    napi_threadsafe_function func,
+    void* data,
+    napi_threadsafe_function_call_mode is_blocking) {
+        return napi_ok;
+}
+
+NAPI_EXTERN napi_status
+napi_acquire_threadsafe_function(
+    napi_threadsafe_function func) {
+        return napi_ok;
+}
+
+NAPI_EXTERN napi_status
+napi_release_threadsafe_function(
+    napi_threadsafe_function func,
+    napi_threadsafe_function_release_mode mode) {
+        return napi_ok;
+}
+
+NAPI_EXTERN napi_status
+napi_unref_threadsafe_function(
+    napi_env env, 
+    napi_threadsafe_function func) {
+        return napi_ok;
+}
+
+NAPI_EXTERN napi_status
+napi_ref_threadsafe_function(
+    napi_env env, 
+    napi_threadsafe_function func) {
+        return napi_ok;
+}
+
+#endif  // NAPI_VERSION >= 4
