@@ -62,3 +62,4 @@ typings/
 *.a
 main
 libmath.h
+libgoaddon.h
