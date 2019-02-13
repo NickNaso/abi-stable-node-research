@@ -1,6 +1,7 @@
-# Use N-API library in Go and export all in Node.js
+# Use C library stub in Go and and real library in Node.js setting the include dir
 
-In this experiment I imported C library stub for N-API in **Go** then I used the function of the library in a **Go** function. After the export like a C static library I used it in a native add-on. To run the experiment execute the following command:
+In this experiment I imported C library stub in **Go** then I used the function of the library in a **Go** function. After the export like a C static library I used it in a native add-on linking the real C library. In both environment I set the right include direcotry to make easier the usage of the libraries.
+To run the experiment execute the following command:
 
 `$ ./build.sh`
 
