@@ -11,7 +11,7 @@ ar -rcs libnode_api.a node_api.o && \
 ranlib libnode_api.a && \
 echo N-API stub successfully builded. && \
 echo Build Go library ...  && \
-go build -a -x -o libgoaddon.a -buildmode=c-archive go-napi-core.go && \
+go build -a -x -o libgoaddon.a -buildmode=c-archive go-napi.go && \
 echo Build Node.js native add-on ... && \
 npm i && \
 echo Node.js native add-on successfully created. && \
