@@ -32,6 +32,8 @@ this project
 
 **[Building And Using Static And Shared C Libraries](http://docencia.ac.upc.edu/FIB/USO/Bibliografia/unix-c-libraries.html)**
 
+**[Call Go function from C function](https://dev.to/mattn/call-go-function-from-c-function-1n3)**
+
 
 ### Nicola Del Gobbo
 
