@@ -4,13 +4,11 @@ package main
 // #cgo CFLAGS: -I.
 // #cgo LDFLAGS: -L. -lnode_api
 // #include <node_api.h>
-// extern void ACFunction();
-// extern napi_callback create_napi_callback();
+// extern napi_value Method(napi_env p0, napi_callback_info p1);
 import (
 	"C"
 )
 import (
-	"fmt"
 	"unsafe"
 )
 
@@ -21,11 +19,6 @@ func Method(env C.napi_env, info C.napi_callback_info) C.napi_value {
 	return res
 }
 
-//export AGoFunction
-func AGoFunction() {
-	fmt.Println("AGoFunction()")
-}
-
 //export Initialize
 func Initialize(env C.napi_env, exports C.napi_value) C.napi_value {
 	name := C.CString("createInt32")
@@ -34,7 +27,7 @@ func Initialize(env C.napi_env, exports C.napi_value) C.napi_value {
 	desc := C.napi_property_descriptor{
 		utf8name:   name,
 		name:       nil,
-		method:     nil,
+		method:     (C.napi_callback)(unsafe.Pointer(C.Method)),
 		getter:     nil,
 		setter:     nil,
 		value:      nil,
