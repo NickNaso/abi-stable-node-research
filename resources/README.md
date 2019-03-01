@@ -34,6 +34,10 @@ this project
 
 **[Call Go function from C function](https://dev.to/mattn/call-go-function-from-c-function-1n3)**
 
+**[Examples of calls between Go and C/C++ ](https://github.com/draffensperger/go-interlang)**
+
+**[Calls between Go and C/C++ (and dynamic langs) - Talk](https://www.youtube.com/watch?v=yAloMvudvC4)**
+
 
 ### Nicola Del Gobbo
 
