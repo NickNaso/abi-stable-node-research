@@ -9,7 +9,7 @@ extern "C" {
 
 napi_value CallbackMethod(napi_env env, napi_callback_info info);
 
-void CallToAction(void* CbData);
+napi_value CallToAction(void* CbData);
 
 #ifdef __cplusplus
 }
