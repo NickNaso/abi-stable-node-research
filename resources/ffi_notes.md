@@ -12,20 +12,18 @@ These rules are checked during the runtime, and if violated program crashes. At 
 
 So it is not possible anymore to pass a pointer to C code, if the memory to which it is pointing stores a Go function/method pointer. There are several ways to overcome this limitations, but I guess in most of them you should store a synchronized data structure which represents the correspondence between a certain id and the actual pointer. This way you can pass an id to the C code, not a pointer.
 
-The code solving this problem might look like this:  SOLUTION 1
+The code solving this problem might look like **[this](1_method.go)**.
 
-
-See: https://github.com/golang/go/wiki/cgo#function-variables
+For more information see: https://github.com/golang/go/wiki/cgo#function-variables
 
 
 It depends exactly what you need to do with the callback function - but a trick that might work is to not pass the Go function, but a pointer to a struct with the function on it that you want.
 
-For example: SOLUTION 2
-
+The code solving this problem might look like **[this](2_method.go)**.
 
 Another option might be to use a global variable as you had in your example, and then forgo passing anything useful in the pointer to C.
 
-Like this: SOLUTION 3
+The code solving this problem might look like **[this](3_method.go)**.
 
 
 Reference: https://stackoverflow.com/questions/37157379/passing-function-pointer-to-the-c-code-using-cgo
