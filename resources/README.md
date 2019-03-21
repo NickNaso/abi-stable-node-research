@@ -38,6 +38,10 @@ this project
 
 **[Calls between Go and C/C++ (and dynamic langs) - Talk](https://www.youtube.com/watch?v=yAloMvudvC4)**
 
+**[Rust FFI guide](https://michael-f-bryan.github.io/rust-ffi-guide/)**
+
+**[Rust bindgen](https://rust-lang.github.io/rust-bindgen/)
+
 
 ### Nicola Del Gobbo
 
