@@ -2,6 +2,8 @@
 
 This section contains notes that cames from my study about FFI (Foreign function interface).
 
+## Go  
+
 Starting from Go 1.6 cgo has new rules.
 
 > Go code may pass a Go pointer to C provided that the Go memory to which it points does not contain any Go pointers.
@@ -27,4 +29,15 @@ The code solving this problem might look like **[this](3_method.go)**.
 
 
 Reference: https://stackoverflow.com/questions/37157379/passing-function-pointer-to-the-c-code-using-cgo
+
+## Rust
+
+`bindgen` is a tool that allow you to automatically generate the **Rust FFI**  bindings
+for C and C++ code.
+`bindgen` use `Clang` to parse and check the C and C++ header file and to use all the
+capability offered by `bindgen` you need to install `Clang` version 3.9 specially
+if you want create a bindings for C++ code library.
+
+The ideal is to use `bindgen` with `build.rs` specially if in hte C or C++ code 
+constains conditional inclusion code for different platform / architecture
 
