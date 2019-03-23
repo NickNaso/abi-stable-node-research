@@ -40,7 +40,7 @@ this project
 
 **[Rust FFI guide](https://michael-f-bryan.github.io/rust-ffi-guide/)**
 
-**[Rust bindgen](https://rust-lang.github.io/rust-bindgen/)
+**[Rust bindgen](https://rust-lang.github.io/rust-bindgen/)**
 
 
 ### Nicola Del Gobbo
