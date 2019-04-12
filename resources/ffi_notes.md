@@ -27,8 +27,9 @@ Another option might be to use a global variable as you had in your example, and
 
 The code solving this problem might look like **[this](3_method.go)**.
 
-
 Reference: https://stackoverflow.com/questions/37157379/passing-function-pointer-to-the-c-code-using-cgo
+
+[Call Go functions from C](https://stackoverflow.com/questions/6125683/call-go-functions-from-c)
 
 ## Rust
 
