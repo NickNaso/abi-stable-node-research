@@ -1,4 +1,5 @@
 #include "node_api.h"
+#include <stdio.h>
 
 // ##############################################################################
 // Stub for JavaScript API

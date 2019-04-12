@@ -1,8 +1,0 @@
-[package]
-authors = ["Nicola Del Gobbo <nicoladelgobbogmail.com>"]
-build = "build.rs"
-name = "napi-sys"
-version = "0.0.1"
-
-[build-dependencies]
-bindgen = "*"
