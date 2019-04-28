@@ -1,6 +1,7 @@
 #!/bin/bash          
 echo Starting build process ...  && \
 echo Build C library ...  && \
+export MACOSX_DEPLOYMENT_TARGET=10.7 && \
 gcc -c sum.c && \
 ar -rcs libsum.a sum.o && \
 ranlib libsum.a && \

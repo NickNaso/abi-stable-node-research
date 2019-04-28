@@ -1,7 +1,7 @@
 #!/bin/bash          
 echo Starting build process ...
 echo Build C library ...
-gcc -c sum.c && \
+gcc -c sum.c -mmacosx-version-min=10.7 && \
 ar -rc libsum.a sum.o
 echo Build Node.js native add-on ... && \
 npm i && \
