@@ -30,15 +30,3 @@ The code solving this problem might look like **[this](3_method.go)**.
 Reference: https://stackoverflow.com/questions/37157379/passing-function-pointer-to-the-c-code-using-cgo
 
 [Call Go functions from C](https://stackoverflow.com/questions/6125683/call-go-functions-from-c)
-
-## Rust
-
-`bindgen` is a tool that allow you to automatically generate the **Rust FFI**  bindings
-for C and C++ code.
-`bindgen` use `Clang` to parse and check the C and C++ header file and to use all the
-capability offered by `bindgen` you need to install `Clang` version 3.9 specially
-if you want create a bindings for C++ code library.
-
-The ideal is to use `bindgen` with `build.rs` specially if in hte C or C++ code 
-constains conditional inclusion code for different platform / architecture
-
