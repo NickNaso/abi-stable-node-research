@@ -9,7 +9,7 @@ This repository is the home for the reasearch on ABI Stable Node API (N-API). In
   - [Go basic example](/go-example)
   - [Go addon raw binding](/go-addon-raw-binding)
 * **Prototype**:
-    - [Go](/prototype/go-napi)
+    - [Go N-API](/prototype/go-napi)
 * **[Code of conduct](CODE_OF_CONDUCT.md)**
 * **[Team](#team)**
 * **[Acknowledgements](#acknowledgements)**
