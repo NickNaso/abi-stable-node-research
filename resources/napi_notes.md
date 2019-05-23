@@ -24,11 +24,3 @@ Following the example of `node-addon-api` this project has the purpose to invast
 N-API written in programming languages different from C / C++.
  
 * **[ABI stability](/resources/napi/abi_stability.md)**
-* **[Data types](/resources/napi/data_types.md)**
-* **[Error handling](/resources/napi/error_handling.md)**
-* **[Module registration](/resources/napi/module_registration.md)**
-* **[Working with JavaScript](/resources/napi/working_with_javascript.md)**
-* **[Object lifetime](/resources/napi/object_lifetime.md)**
-* **[Object wrap](/resources/napi/object_wrap.md)**
-* **[Asynchronous operations](/resources/napi/asynchronous_operations.md)**
-
