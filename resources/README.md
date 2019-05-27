@@ -6,6 +6,16 @@ Personal notes about **FFI** and **N-API**
 
 - **[N-API notes](./napi_notes.md)**
 
+- **FFI paperss**:
+
+    - **[Gforth’s libcc C Function Call Interface](./ffi-papers/gforth-libcc.pdf)**
+    - **[A modular foreign function interface](./ffi-papers/a-modular-foreign-function-interface.pdf)** 
+    - **[Embedding Foreign Code](./ffi-papers/acc-ffi.pdf)**
+    - **[Implementing a Portable Foreign Function Interface through Dynamic C Code Generation](./ffi-papers/ccffi.pdf)**
+    - **[Language-side Foreign Function Interfaces with NativeBoost](./ffi-papers/language-ffi-native-boost.pdf)**
+    - **[The Layers of Larceny’s Foreign Function Interface](./ffi-papers/layers-larceny.pdf)**
+    - **[The FFI Reference Manual](./ffi-papers/mit-scheme-ffi.pdf)**
+
 
 This section contains a list of resources that inspired me while I was working in
 this project
