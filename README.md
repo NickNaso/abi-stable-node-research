@@ -1,4 +1,4 @@
-# Research for N-API
+# Research for N-API Bindings
 
 This repository is the home for the reasearch on ABI Stable Node API (N-API). In the specific the focus of this project is to find a good way to create a wrapper over the C API exported by the Node.js core written in programming languages different from **C** / **C++**.
 
