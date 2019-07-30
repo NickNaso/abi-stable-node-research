@@ -7,6 +7,9 @@ This repository is the home for the reasearch on ABI Stable Node API (N-API). In
 * **Examples**:
   - [Go basic example](/go-example)
   - [Go addon raw binding](/go-addon-raw-binding)
+* **Other N-API bindings**:
+  - [Swift](https://github.com/LinusU/swift-napi-bindings)
+  - [Rust](https://github.com/napi-rs/napi)
 * **[Code of conduct](CODE_OF_CONDUCT.md)**
 * **[Team](#team)**
 * **[Acknowledgements](#acknowledgements)**
