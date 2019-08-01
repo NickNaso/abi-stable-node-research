@@ -8,8 +8,8 @@ This repository is the home for the reasearch on ABI Stable Node API (N-API). In
   - [Go basic example](/go-example)
   - [Go addon raw binding](/go-addon-raw-binding)
 * **Go bindings**:
-  - [Low level binding](https://github.com/napi-bindings/go-napi-sys)
-  - [High level binding](https://github.com/napi-bindings/go-napi)
+  - [Low level binding **go-napi-sys**](https://github.com/napi-bindings/go-napi-sys)
+  - [High level binding **go-napi**](https://github.com/napi-bindings/go-napi)
 * **Other N-API bindings**:
   - [Swift](https://github.com/LinusU/swift-napi-bindings)
   - [Rust](https://github.com/napi-rs/napi)
