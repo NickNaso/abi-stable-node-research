@@ -13,7 +13,7 @@ Personal notes about **FFI** and **N-API**
     - **[Embedding Foreign Code](./ffi-papers/acc-ffi.pdf)**
     - **[Implementing a Portable Foreign Function Interface through Dynamic C Code Generation](./ffi-papers/ccffi.pdf)**
     - **[Language-side Foreign Function Interfaces with NativeBoost](./ffi-papers/language-ffi-native-boost.pdf)**
-    - **[The Layers of Larceny’s Foreign Function Interface](./ffi-papers/layers-larceny.pdf)**
+    - **[The Layers of Larceny’s Foreign Function Interface](./ffi-papers/layers-larceny-ffi.pdf)**
     - **[The FFI Reference Manual](./ffi-papers/mit-scheme-ffi.pdf)**
 
 
