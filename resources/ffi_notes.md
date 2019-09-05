@@ -40,6 +40,9 @@ need to pass a Go Array or Slice to C function that usually receive two
 parameters an integer that represents the number of elements in the collection
 and a pointer to the first element in the collection.
 
+The most important thing in this case is to cast to the right type otherwise you
+will risk to access to unexpected area of memory.
+ 
 Here I report two examples:
 
 - **[Pass Go Array to C](pass-array-to-c.go)**
