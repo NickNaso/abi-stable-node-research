@@ -42,5 +42,5 @@ and a pointer to the first element in the collection.
 
 Here I report two examples:
 
-- **(Pass Go Array to C)[pass-array-to-c.go]**
-- **(Pass Go Slice to C)[pass-slice-to-c.go]**
+- **[Pass Go Array to C](pass-array-to-c.go)**
+- **[Pass Go Slice to C](pass-slice-to-c.go)**
