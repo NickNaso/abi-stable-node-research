@@ -52,6 +52,7 @@ this project
 
 **[Rust bindgen](https://rust-lang.github.io/rust-bindgen/)**
 
+**[Java JNI specifications](https://docs.oracle.com/javase/8/docs/technotes/guides/jni/spec/jniTOC.html)**
 
 ### Nicola Del Gobbo
 
