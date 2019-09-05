@@ -2,7 +2,9 @@
 
 This section contains notes that cames from my study about FFI (Foreign function interface).
 
-## Go  
+## Go 
+
+### Pass Go function to C
 
 Starting from Go 1.6 cgo has new rules.
 
@@ -30,3 +32,15 @@ The code solving this problem might look like **[this](3_method.go)**.
 Reference: https://stackoverflow.com/questions/37157379/passing-function-pointer-to-the-c-code-using-cgo
 
 [Call Go functions from C](https://stackoverflow.com/questions/6125683/call-go-functions-from-c)
+
+### Pass Go Array and Slice to C
+
+The **C** meta package allows the interaction between Go and C. In some cases you
+need to pass a Go Array or Slice to C function that usually receive two 
+parameters an integer that represents the number of elements in the collection
+and a pointer to the first element in the collection.
+
+Here I report two examples:
+
+- **(Pass Go Array to C)[pass-array-to-c.go]**
+- **(Pass Go Slice to C)[pass-slice-to-c.go]**
