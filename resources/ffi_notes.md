@@ -47,3 +47,90 @@ Here I report two examples:
 
 - **[Pass Go Array to C](pass-array-to-c.go)**
 - **[Pass Go Slice to C](pass-slice-to-c.go)**
+
+### cgo
+
+If a Go source file imports `"C"`, it is using cgo. The Go file will have access 
+to anything appearing in the comment immediately preceding the line `import "C"`,
+and will be linked against **all other cgo comments in other Go files**, and all 
+C files included in the build process.
+
+Note that there must be no blank lines in between the cgo comment and the import 
+statement. This is the main source of errors on starting to use **cgo**.
+
+Since variable argument methods like printf aren't supported yet, we will wrap it
+in the C a custom C function. See the following example:
+
+```go
+package cgoexample
+
+/*
+#include <stdio.h>
+#include <stdlib.h>
+
+void myprint(char* s) {
+	printf("%s\n", s);
+}
+*/
+import "C"
+
+import "unsafe"
+
+func Example() {
+	cs := C.CString("Hello from stdio\n")
+	C.myprint(cs)
+	C.free(unsafe.Pointer(cs))
+}
+```
+
+Go makes its functions available to C code through use of a special `//export` 
+comment. If the Go file contains `//export` directive then it's only possible
+include a declaration for a C function or atherwise it's alway passible declare
+the function as `static inline`.
+
+### Go and C strings
+
+Go and C represent string object in a different ways. Go strings are the 
+combination of a length and a pointer to the first character. C strings are the 
+pointer to the first character and are terminated by the null character `\0`.
+
+Go provides 3 utility functions to allow the usage of strings both in Go and C:
+
+- `func C.CString(goString string) *C.char`
+- `func C.GoString(cString *C.char) string`
+- `func C.GoStringN(cString *C.char, length C.int) string`
+
+One of the important thing to remember is that the `C.CString()` function will
+allocate a new memory space for the C string and this means that will be the 
+responsibility of the developer manage the new allocated memory. The common 
+pattern is reported below: 
+
+```go
+// #include <stdlib.h>
+import "C"
+import "unsafe"
+
+	var cmsg *C.char = C.CString("hi")
+	// The responsibility of manage the allocated memory for a C string is not of
+	// the gargage collector but of the developer
+	defer C.free(unsafe.Pointer(cmsg))
+	// do something with the C string
+```
+
+### Go and C arrays
+
+C arrays in  C are a sequanche of characters with null termination character or
+a sequence of memory element and a defined length.
+
+Go provide the following function to transform a C array in a Go slice of `byte`:
+
+- `func C.GoBytes(cArray unsafe.Pointer, length C.int) []byte`
+
+It is important to keep in mind that the Go garbage collector will not interact 
+with this data, and that if it is freed from the C side of things, the behavior 
+of any Go code using the slice is nondeterministic.
+
+### Environment variables
+
+Remember that `os.Getenv()` does not see the environment variables set by 
+`C.setenv()`.
