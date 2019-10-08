@@ -117,6 +117,14 @@ import "unsafe"
 	// do something with the C string
 ```
 
+A C function may be declared in the Go file with a parameter type of the special 
+name **`_GoString_`**.
+
+```C
+size_t _GoStringLen(_GoString_ s);
+const char *_GoStringPtr(_GoString_ s);
+```
+
 ### Go and C arrays
 
 C arrays in  C are a sequanche of characters with null termination character or
@@ -134,3 +142,22 @@ of any Go code using the slice is nondeterministic.
 
 Remember that `os.Getenv()` does not see the environment variables set by 
 `C.setenv()`.
+
+### Numeric types
+
+The standard C numeric types are available under the names C.char, 
+C.schar (signed char), C.uchar (unsigned char), C.short, 
+C.ushort (unsigned short), C.int, C.uint (unsigned int), C.long, 
+C.ulong (unsigned long), C.longlong (long long), 
+C.ulonglong (unsigned long long), C.float, C.double, 
+C.complexfloat (complex float), and C.complexdouble (complex double). 
+The C type void* is represented by Go's unsafe.Pointer. The C types __int128_t 
+and __uint128_t are represented by [16]byte.
+
+A few special C types which would normally be represented by a pointer type in Go
+are instead represented by a **uintptr**.
+
+To access a struct, union, or enum type directly, *prefix* it with **struct_**, 
+**union_**, or **enum_**, as in **C.struct_stat**.
+
+The size of any C type T is available as **C.sizeof_T**, as in **C.sizeof_struct_stat**.
