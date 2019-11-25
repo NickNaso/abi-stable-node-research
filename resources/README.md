@@ -54,6 +54,10 @@ this project
 
 **[Java JNI specifications](https://docs.oracle.com/javase/8/docs/technotes/guides/jni/spec/jniTOC.html)**
 
+**[Working around type system of Go with unsafe](https://copyninja.info/blog/workaround-gotypesystems.html)**
+
+**[Working around type system of Go with unsafe](https://copyninja.info/blog/workaround-gotypesystems.html)**
+
 ### Nicola Del Gobbo
 
 <https://github.com/NickNaso/>
