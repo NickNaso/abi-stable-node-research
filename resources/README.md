@@ -56,7 +56,7 @@ this project
 
 **[Working around type system of Go with unsafe](https://copyninja.info/blog/workaround-gotypesystems.html)**
 
-**[Working around type system of Go with unsafe](https://copyninja.info/blog/workaround-gotypesystems.html)**
+**[Considerations about the usage of cgo](https://dave.cheney.net/2016/01/18/cgo-is-not-go)**
 
 ### Nicola Del Gobbo
 
