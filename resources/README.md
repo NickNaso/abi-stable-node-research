@@ -6,7 +6,7 @@ Personal notes about **FFI** and **N-API**
 
 - **[N-API notes](./napi_notes.md)**
 
-- **[Using the Go programming languange in practice](./golang.pdf)
+- **[Using the Go programming languange in practice](./golang.pdf)**
 
 - **FFI paperss**:
 
