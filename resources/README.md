@@ -8,6 +8,8 @@ Personal notes about **FFI** and **N-API**
 
 - **[Using the Go programming languange in practice](./golang.pdf)**
 
+- **[Use unsafe and cgo](./unsafe-cgo.pdf)**
+
 - **FFI paperss**:
 
     - **[Gforth’s libcc C Function Call Interface](./ffi-papers/gforth-libcc.pdf)**
