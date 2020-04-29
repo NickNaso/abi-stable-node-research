@@ -11,8 +11,12 @@ This repository is the home for the reasearch on ABI Stable Node API (N-API). In
   - [Low level binding **go-napi-sys**](https://github.com/napi-bindings/go-napi-sys)
   - [High level binding **go-napi**](https://github.com/napi-bindings/go-napi)
 * **Other N-API bindings**:
-  - [Swift](https://github.com/LinusU/swift-napi-bindings)
-  - [Rust](https://github.com/napi-rs/napi)
+  - **Swift**
+    - [N-API Swift Bindings](https://github.com/LinusU/swift-napi-bindings)
+  - **Rust**
+    - [A minimal library for building compiled Node add-ons in Rust](https://github.com/Brooooooklyn/napi-rs)
+    - [Low-level bindings to N-API](https://github.com/napi-rs/napi-sys)
+    - [High-level Node.js N-API bindings for Rust ](https://github.com/napi-rs/napi)
 * **[Code of conduct](CODE_OF_CONDUCT.md)**
 * **[Team](#team)**
 * **[Acknowledgements](#acknowledgements)**
