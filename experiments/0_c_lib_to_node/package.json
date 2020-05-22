@@ -1,7 +1,7 @@
 {
     "name": "math",
     "version": "0.0.1",
-    "description": "Example - How to use Go code on Node.js Native Add-On",
+    "description": "Example - How to use C library on Node.js Native Add-On",
     "main": "add.js",
     "private": true,
     "author": "Nicola Del Gobbo <nicoladelgobbo@gmail.com>",
@@ -9,16 +9,16 @@
         "bindings": "*"
     },
     "scripts": {
-        "test": "node add.js"
+        "test": "node index.js"
     },
     "gypfile": true,
     "license": "Apache-2.0",
     "bugs": {
         "url": "https://github.com/NickNaso/gaa/issues"
     },
-    "homepage": "https://github.com/NickNaso/gaa#readme",
+    "homepage": "https://github.com/NickNaso/abi-stable-node-research#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/NickNaso/gaa.git"
+        "url": "https://github.com/NickNaso/abi-stable-node-research.git"
     }
 }
